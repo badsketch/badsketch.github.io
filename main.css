@@ -1,3 +1,11 @@
 .jumbotron {
     background-color: transparent !important;
 }
+
+.card-img-top {
+    width: 100%;
+}
+
+.d-inline {
+    padding:20px !important;
+}
