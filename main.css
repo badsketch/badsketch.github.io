@@ -2,10 +2,16 @@ body {
     font-family: 'Quicksand', sans-serif !important;
 }
 
-
+a {
+    color: black;
+}
 
 .card-img-top {
     width: 100%;
+}
+
+.row-margin {
+    margin: 20px;
 }
 
 .d-inline {
