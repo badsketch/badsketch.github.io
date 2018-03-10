@@ -2,6 +2,9 @@ body {
     font-family: 'Quicksand', sans-serif !important;
 }
 
+.jumbotron {
+    background-color: #f3f9fe;
+}
 a {
     color: black;
 }
