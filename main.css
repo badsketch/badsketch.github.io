@@ -9,9 +9,17 @@ a {
     color: black;
 }
 
+.card-header {
+    font-style: bold;
+}
 .card-img-top {
     width: 100%;
     object-fit:cover;
+}
+
+.badge img {
+    width:23px;
+    height:23px;
 }
 
 .row-margin {
