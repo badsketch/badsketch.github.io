@@ -11,6 +11,7 @@ a {
 
 .card-img-top {
     width: 100%;
+    object-fit:cover;
 }
 
 .row-margin {
@@ -20,3 +21,4 @@ a {
 .d-inline {
     padding:20px !important;
 }
+
