@@ -5,10 +5,13 @@ body {
 .jumbotron {
     background-color: #f3f9fe;
 }
-a {
+.jumbotron a {
     color: black;
 }
 
+a {
+    color:#2b5e88;
+}
 .card-header {
     font-style: bold;
 }
