@@ -24,6 +24,12 @@ a {
 
 }
 
+#weather-img {
+    height:300px;
+    width:auto;
+    display:block;
+}
+
 
 .badge img {
     width:23px;
