@@ -18,8 +18,8 @@ a {
 }
 
 .oversized-img {
-    width:200px;
-    height:auto;
+    width:auto;
+    height:198px;
     display:block;
 
 }
