@@ -17,6 +17,14 @@ a {
     object-fit:cover;
 }
 
+.oversized-img {
+    width:200px;
+    height:auto;
+    display:block;
+
+}
+
+
 .badge img {
     width:23px;
     height:23px;
@@ -33,4 +41,6 @@ a {
 footer {
     background-color: #f3f9fe;
 }
+
+
 
