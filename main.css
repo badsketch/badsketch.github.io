@@ -14,12 +14,20 @@ a {
 }
 .card-header {
     font-style: bold;
+   
+}
+
+#hack-title {
+    border:none;
 }
 .card-img-top {
     width: 100%;
     object-fit:cover;
 }
 
+.nav-link {
+    font-size: 14px;
+}
 .oversized-img {
     width:auto;
     height:198px;
