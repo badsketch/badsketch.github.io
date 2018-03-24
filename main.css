@@ -63,5 +63,11 @@ a.icon {
     text-decoration: none;
 }
 
+.form-check-input:disabled~.form-check-label {
+    color:black;
+}
+
+
+
 
 
