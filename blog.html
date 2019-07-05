@@ -1,113 +1,18 @@
 ---
 layout: default
 ---
-    <div class="container">
+<div class="container">
+    {% for post in site.posts %}
         <div class="row justify-content-center row-margin">
             <div class="col col-md-8">
                 <div class="card">
                     <div class="card-body">
-
-                        <h3 class="card-title font-weight-bold">On React Native</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Mar 29 2018</h6>
-                        <br>
-                        <p class="card-text">
-                            I've been going over the official react native tutorials and I have to say I've been having a blast. Over a year ago, a friend
-                            and I tried to make a project in React and I remember struggling with the concepts because my
-                            experience with web development was so limited. We ultimately didn't get anywhere so now it's
-                            in an abandoned repo.
-
-                        </p>
-                        <p class="card-text">
-                            I know ReactJS and React Native aren't exactly the same, but anyways, this time things just clicked. It just felt gratifying
-                            to see my progress. Before I lacked the foundational knowledge to gain a footing on all the new
-                            concepts, but after a year of web development playing with different frameworks, the experience
-                            really helped in the learning process. When you're introduced to new concepts, it helps to draw
-                            from experience to gain a familiarity based on relative knowledge. You notice where you've seen
-                            things before. I could go, "Oh, they're shifting this to do that", "This is like x in y, but
-                            for z." Things are hard, but then they get easier and I'm pumped to churn something out before
-                            classes pick up. Granted, I've only completed the basics section BUT I can expect to deploy my
-                            revolutionary billion dollar app idea sometime this <span style="text-decoration: line-through">week</span> year so yeah I'm pretty pumped.
-                        </p>
-
+                        <h3 class="card-title font-weight-bold">{{ post.title }}</h3>
+                        <h6 class="card-subtitle mb-4 text-muted">{{ post.date | date_to_string }}</h6>
+                            {{ post.content }}
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center row-margin">
-            <div class="col col-md-8">
-                <div class="card">
-                    <div class="card-body">
-
-                        <h3 class="card-title font-weight-bold">Hello World</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Mar 24 2018</h6>
-                        <br>
-                        <p class="card-text">
-                            I've never blogged before, but with spring break here, and me discovering a lot of things I want to play with, I decided
-                            it would be a nice way to formalize my thoughts.
-                        </p>
-                        <p class="card-text">
-                            There's a lot of things I want to try out this time and I plan on working in smaller increments. That is, instead of jumping
-                            straight into new ideas with new stacks and frameworks, I actually want to work through tutorials
-                            and smaller scale projects. I think it'll be a good way to gain a solid foundation, while ensuring
-                            I don't get overwhelmed and discouraged. I guess I'll start naming them off in order, and we'll
-                            see what happens!
-                        </p>
-                        <hr class="my-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked disabled>
-                            <label class="form-check-label" for="defaultCheck1">
-                                Add a blog section to my website
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked disabled>
-                            <label class="form-check-label" for="defaultCheck2">
-                                Complete
-                                <a href="https://www.sitepoint.com/mean-stack-angular-2-angular-cli/">
-                                    <strong>this</strong>
-                                </a> basic MEAN tutorial so I can
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-                            <label class="form-check-label" for="defaultCheck2" style="text-decoration:  line-through">
-                                Complete
-                                <a href="https://www.sitepoint.com/mean-stack-angular-2-angular-cli/">
-                                    <strong>this</strong>
-                                </a> user authentication MEAN tutorial so I can
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-                            <label class="form-check-label" for="defaultCheck2">
-                                Revisit
-                                <a href="https://github.com/andrew-ni/bindr">
-                                    <strong>Bindr</strong>
-                                </a> from HackDavis to create user sessions and profiles and
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-                            <label class="form-check-label" for="defaultCheck2">
-                                Play with React-Native to build an iOS app of the above
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked disabled>
-                            <label class="form-check-label" for="defaultCheck2">
-                                Make a web app with
-                                <a href="http://api.thenounproject.com/">
-                                    <strong>The Noun Project</strong>
-                                </a> API
-
-                            </label>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+</div>
