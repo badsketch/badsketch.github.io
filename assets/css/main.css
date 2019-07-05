@@ -1,3 +1,5 @@
+@import "colorful.css";
+
 body {
     font-family: 'Quicksand', sans-serif !important;
 }
@@ -65,6 +67,15 @@ a.icon {
 
 .form-check-input:disabled~.form-check-label {
     color:black;
+}
+
+div.snippet pre {
+    background: #F5F5F5;
+    padding: 10px;
+    overflow-x: auto;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
 }
 
 
